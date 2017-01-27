@@ -35,7 +35,7 @@ endif
 	for f in $(basename $<)-*.asy; \
 	do \
 		echo "$$f"; \
-		asy "$$f" -v; \
+		asy "$$f" -offscreen -v; \
 	done
 
 # Run biber
